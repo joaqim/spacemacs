@@ -191,3 +191,5 @@ and the arguments for flyckeck-clang based on a project-specific text file."
   (interactive)
   (call-interactively (if (spacemacs/c-c++-use-rtags t)
                           'rtags-imenu 'idomenu)))
+
+

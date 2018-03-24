@@ -43,3 +43,11 @@
 
 (defvar c-c++-default-mode-for-headers 'c-mode
   "Default mode to open header files. Can be `c-mode' or `c++-mode'.")
+
+(define-key c++-mode-map [f12] 'casey-find-corresponding-file)
+(define-key c++-mode-map [M-f12] 'casey-find-corresponding-file-other-window)
+
+                                        ; Alternate bindings for F-keyless setups (ie MacOS X terminal)
+(define-key c++-mode-map "\ec" 'casey-find-corresponding-file)
+(define-key c++-mode-map "\eC" 'casey-find-corresponding-file-other-window)
+
